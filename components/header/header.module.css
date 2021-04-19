@@ -1,0 +1,24 @@
+.header {
+  position: relative;
+  z-index: 2;
+}
+
+.wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+@media (max-width: 600px) {
+  .wrap {
+    padding: 16px;
+  }
+}
+
+.link {
+  color: #FFF;
+}

@@ -1,0 +1,21 @@
+.footer {
+  background-color: #333;
+  height: 2.875rem;
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.link {
+  margin-left: 2rem;
+}
+
+.link:hover svg,
+.link:active svg {
+  fill: #ccc;
+}
+
+.link svg {
+  fill: #FFF;
+}

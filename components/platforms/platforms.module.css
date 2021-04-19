@@ -1,0 +1,60 @@
+.podcastPlatforms {
+  text-align: center;
+}
+
+.platforms {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.platforms a {
+  margin-left: 1rem;
+}
+
+.title {
+  font-size: 32px;
+  color: #484848;
+  font-family: 'originalregular';
+  font-weight: normal;
+}
+
+@media (max-width: 600px) {
+  .title {
+    font-size: 24px;
+  }
+}
+
+.spotify,
+.anchor,
+.apple,
+.google,
+.pocketcast,
+.deezer,
+.amazon {
+  width: 2rem;
+  height: 2rem;
+}
+
+@media (max-width: 600px) {
+  .spotify,
+  .anchor,
+  .apple,
+  .google,
+  .pocketcast,
+  .deezer,
+  .amazon {
+    width: 1rem;
+    height: 1rem;
+  }
+}
+
+.platforms a:hover .spotify,
+.platforms a:hover .anchor,
+.platforms a:hover .apple,
+.platforms a:hover .google,
+.platforms a:hover .pocketcast,
+.platforms a:hover .deezer,
+.platforms a:hover .amazon {
+  fill: #561971;
+}
