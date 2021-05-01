@@ -1,3 +1,15 @@
+:root {
+  --main-bg-color: #000;
+  --secondary-bg-color: #561971;
+
+  --main-text-color: #333;
+  --secondary-text-color: #FFF;
+
+  --border-secondary-color: #FFF;
+
+  --font-size-base: 1rem;
+}
+
 html,
 body {
   padding: 0;
@@ -5,6 +17,7 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-size: 16px;
+  color: var(--main-text-color);
 }
 
 @font-face {
@@ -22,27 +35,4 @@ a {
 
 * {
   box-sizing: border-box;
-}
-
-body .rhap_container {
-  background-color: #561971;
-  box-shadow: 0 0 3px 0 #561971;
-}
-
-body .rhap_progress-bar-show-download,
-body .rhap_volume-filled,
-body .rhap_volume-indicator,
-body .rhap_progress-indicator {
-  background-color: #FFF;
-}
-
-body .rhap_progress-filled {
-  background-color: #380c4c;
-  border-radius: 0;
-}
-
-body .rhap_time,
-body .rhap_main-controls-button,
-body .rhap_volume-button {
-  color: #FFF;
 }

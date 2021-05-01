@@ -1,7 +1,6 @@
 .footer {
-  background-color: #333;
-  height: 2.875rem;
-  margin-top: 2rem;
+  background-color: var(--main-bg-color);
+  height: 3rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -13,9 +12,9 @@
 
 .link:hover svg,
 .link:active svg {
-  fill: #ccc;
+  fill: var(--secondary-text-color);
 }
 
 .link svg {
-  fill: #FFF;
+  fill: var(--secondary-text-color);
 }

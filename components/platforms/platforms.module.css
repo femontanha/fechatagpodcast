@@ -13,10 +13,10 @@
 }
 
 .title {
-  font-size: 32px;
-  color: #484848;
+  font-size: 2rem;
   font-family: 'originalregular';
   font-weight: normal;
+  margin: 0 0 1rem;
 }
 
 @media (max-width: 600px) {

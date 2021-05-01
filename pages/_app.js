@@ -1,5 +1,5 @@
 import '../styles/globals.css'
-import styles from '../styles/App.module.css'
+import styles from './app.module.css'
 import Header from '../components/header'
 import Footer from '../components/footer'
 

@@ -1,24 +1,24 @@
-.header {
-  position: relative;
-  z-index: 2;
-}
-
 .wrap {
-  display: flex;
-  justify-content: space-between;
   align-items: center;
-
-  max-width: 800px;
+  display: flex;
   margin: 0 auto;
-  padding: 16px;
+  padding: 1rem;
+  max-width: 900px;
+  justify-content: space-between;
 }
 
-@media (max-width: 600px) {
-  .wrap {
-    padding: 16px;
-  }
+.logoLink {
+  display: inline-block;
 }
 
-.link {
-  color: #FFF;
+.logoText {
+  color: var(--main-bg-color);
+  font-family: 'originalregular';
+  font-size: 2rem;
+  font-weight: normal;
+  margin: 0;
+}
+
+.nav {
+  display: none;
 }

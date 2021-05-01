@@ -1,0 +1,53 @@
+.banner {
+  padding: 2rem;
+  background-color: var(--secondary-bg-color);
+  color: var(--secondary-text-color);
+  background-image: url('../../public/pattern.png');
+  background-position: top right;
+  background-repeat: no-repeat;
+}
+
+.wrapper {
+  max-width: 650px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 600px) {
+  .wrapper {
+    flex-direction: column;
+  }
+}
+
+.image {
+  max-width: 200px;
+}
+
+.information {
+  margin-left: 2rem;
+}
+
+@media (max-width: 600px) {
+  .information {
+    margin-top: 2rem;
+    margin-left: 0;
+    text-align: center;
+  }
+}
+
+.title {
+  margin: 0;
+  font-family: 'originalregular';
+  font-weight: normal;
+  font-size: 2rem;
+}
+
+.description {
+  margin: 0;
+}
+
+.actions {
+  margin-top: 1rem;
+}

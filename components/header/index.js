@@ -1,12 +1,19 @@
+import Link from 'next/link'
+import { HiMenuAlt3 } from "react-icons/hi";
+
 import styles from './header.module.css'
 
 function Header() {
   return (
     <header className={styles.header}>
       <div className={styles.wrap}>
-        <img className={styles.logo} src="logo.png" alt="fechatag logo" />
+        <Link href="/">
+          <a className={styles.logoLink}>
+            <h1 className={styles.logoText}>fechatAg</h1>
+          </a>
+        </Link>
         <nav className={styles.nav}>
-          <a href="mailto:fechatagpodcast@gmail.com" className={styles.link}>Quero Apoiar</a>
+          <HiMenuAlt3 />
         </nav>
       </div>
     </header>

@@ -1,0 +1,21 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.code {
+  font-size: 4rem;
+}
+
+.title {
+  margin: 0;
+}
+
+.link {
+  margin-top: 2rem;
+  border: 1px solid;
+  padding: 1rem;
+  border-radius: 1rem;
+}
