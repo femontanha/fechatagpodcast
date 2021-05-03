@@ -23,9 +23,9 @@ export default function Home() {
       <div className={styles.host}>
         <h2 className={styles.hostTitle}>último episódio</h2>
         <div className={styles.player}>
-          <img src="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_episode/13565104/13565104-1619832917078-f3892022815a6.jpg" alt="Pothix" />
+          <img src="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_episode/13565104/13565104-1620019142107-e7021963dd9a9.jpg" alt="Felipe Fialho" />
           <AudioPlayer
-            src="https://anchor.fm/s/51734b40/podcast/play/32593866/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2021-4-1%2F47b8ef2a-d101-c5bc-46f3-e4b2706ae561.mp3"
+            src="https://anchor.fm/s/51734b40/podcast/play/32711790/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2021-4-3%2F8089dfd5-d755-9c46-7533-30b24a505b63.mp3"
             showFilledVolume
             customAdditionalControls={[]}
           />
