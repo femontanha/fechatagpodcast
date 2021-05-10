@@ -65,6 +65,10 @@
   }
 }
 
+.hostVideo {
+  margin-bottom: 32px;
+}
+
 .player {
   display: flex;
   align-items: center;
