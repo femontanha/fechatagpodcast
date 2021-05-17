@@ -23,14 +23,14 @@ export default function Home() {
       <div className={styles.host}>
         <h2 className={styles.hostTitle}>último episódio em vídeo</h2>
         <div className={styles.hostVideo}>
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/vUXyf4blmvQ" title="Assistir episódio: Ensinar Tecnologia, Twitch e Suécia com Marco Bruno" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/J3PBB0ujvHY" title="Assistir episódio: Tecnologia em Floripa, Cerveja e Trybe com Elton Minetto" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
         </div>
 
         <h2 className={styles.hostTitle}>último episódio em áudio</h2>
         <div className={styles.player}>
-          <img src="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_episode/13565104/13565104-1620927379866-678b6cf4fc3a9.jpg" alt="Marco Bruno" />
+          <img src="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_episode/13565104/13565104-1621206341163-1fe24af7e6899.jpg" alt="Elton Minetto" />
           <AudioPlayer
-            src="https://anchor.fm/s/51734b40/podcast/play/33430672/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2021-4-13%2F4205c0ea-e13c-2803-bec7-9ab1e639c470.mp3"
+            src="https://anchor.fm/s/51734b40/podcast/play/33628777/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2021-4-16%2F40296e17-8693-467c-d077-a4c2943bb189.mp3"
             showFilledVolume
             customAdditionalControls={[]}
           />
