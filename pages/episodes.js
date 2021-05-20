@@ -1,10 +1,11 @@
+import Parser from 'rss-parser'
 import Head from 'next/head'
 
 import Block from '../components/block'
-import EpisodesList from '../components/episodes-list'
-import Platforms from '../components/platforms'
+import Episode from '../components/episode'
+import Social from '../components/social'
 
-const Episodes = () => (
+const Episodes = ({ episodes }) => (
   <>
      <Head>
         <title>Episódios - FECHATAG Podcast</title>
@@ -12,18 +13,37 @@ const Episodes = () => (
       </Head>
       <Block
         title="Todos os episódios"
-        description="Lista de todos os episódios do podcast"
+        description={`Total de ${episodes.length} episódios`}
+        inverted
+      />
+      <div className="container">
+        {episodes.map(episode => (
+          <Episode
+            key={episode.guid}
+            date={new Date(episode.pubDate).toLocaleDateString('pt-br')}
+            title={episode.title}
+            href={`/episodes/${episode.itunes.episode}`}
+          />
+        ))}
+      </div>
+      <Block
+        title="redes sociais"
+        description="acesse as nossas redes sociais"
         inverted
       >
-        <EpisodesList />
-      </Block>
-      <Block
-        title="plataformas de podcast"
-        description="Estamos no seu agregador de podcast favorito"
-      >
-        <Platforms />
+        <Social />
       </Block>
   </>
 )
+
+export async function getStaticProps() {
+  const parser = new Parser()
+  const feed = await parser.parseURL('https://anchor.fm/s/51734b40/podcast/rss')
+  return {
+    props: {
+      episodes: feed.items,
+    },
+  }
+}
 
 export default Episodes

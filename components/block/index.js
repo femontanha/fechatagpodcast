@@ -8,7 +8,11 @@ const Block = ({ title, description, inverted, children }) => (
         {description}
       </p>
     )}
-    {children}
+    {children && (
+      <div className={styles.content}>
+        {children}
+      </div>
+    )}
   </div>
 )
 

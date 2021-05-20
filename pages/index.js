@@ -1,34 +1,59 @@
+import Parser from 'rss-parser'
 import Head from 'next/head'
+import Link from 'next/link'
 
 import Block from '../components/block'
-import Banner from '../components/banner'
 import Platforms from '../components/platforms'
+import Social from '../components/social'
 
-export default function Home() {
+import styles from '../styles/home.module.css'
+
+export default function Home({ lastEpisode }) {
   return (
     <>
       <Head>
         <title>FECHATAG Podcast</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Banner
-        image={"https://s3-us-west-2.amazonaws.com/anchor-generated-image-bank/production/podcast_uploaded_nologo400/13565104/13565104-1618841220859-bd2a7f95f0839.jpg"}
-        title="fechatAg"
-        description="Olá eu sou o Montanha! O projeto FECHATAG é um podcast de bate papo com pessoas de tecnologia."
-      />
+      <section className="container">
+        <p className={styles.intro}>
+          Um podcast onde o Montanha bate um papo com diversas pessoas de tecnologia. Os episódios são publicados todas às <span className={styles.period}>terças e quintas</span> nos seus agregadores favoritos e também agora em vídeo no Youtube.
+        </p>
+      </section>
       <Block
         title="último episódio"
-        description="Escute o último episódio pelo Apple Podcast Player"
+        inverted
       >
-        <iframe allow="autoplay *; encrypted-media *; fullscreen *" frameBorder="0" height="175" src="https://embed.podcasts.apple.com/br/podcast/vivendo-de-stream-humorista-e-magic-com-pokemaobr/id1559548772?i=1000517690647"></iframe>
+        <Link href={`/episodes/${lastEpisode.itunes.episode}`}>
+          <a className={styles.lastEpisodeLink}>
+            {lastEpisode.title}
+          </a>
+        </Link>
       </Block>
       <Block
         title="plataformas de podcast"
         description="Estamos no seu agregador de podcast favorito"
-        inverted
       >
         <Platforms />
       </Block>
+      <Block
+        title="redes sociais"
+        description="acesse as nossas redes sociais"
+        inverted
+      >
+        <Social />
+      </Block>
     </>
   )
+}
+
+export async function getStaticProps() {
+  const parser = new Parser()
+  const feed = await parser.parseURL('https://anchor.fm/s/51734b40/podcast/rss')
+  console.log()
+  return {
+    props: {
+      lastEpisode: feed.items[0],
+    },
+  }
 }

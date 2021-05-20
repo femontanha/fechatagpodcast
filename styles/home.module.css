@@ -1,0 +1,26 @@
+.intro {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+}
+
+.period {
+  background-color: #000;
+  color: #FFF;
+  padding: .2rem .5rem;
+}
+
+.lastEpisodeLink {
+  display: inline-block;
+  border: 1px solid;
+  padding: .5rem 1rem;
+  border-radius: 3px;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.5rem;
+  background-color: #000;
+  color: #FFF;
+}
+
+.lastEpisodeLink:hover {
+  background-color: #79236c;
+}

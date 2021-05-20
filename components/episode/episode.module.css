@@ -1,0 +1,25 @@
+.episode {
+  margin: 2rem 0 4rem;
+}
+
+.time {
+  background-color: #000;
+  color: #FFF;
+  padding: .3rem 1rem;
+  font-weight: bold;
+}
+
+.title {
+  margin: 1rem 0;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.button {
+  display: inline-block;
+  border: 1px solid;
+  padding: .5rem 1rem;
+  border-radius: 3px;
+}

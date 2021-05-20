@@ -1,20 +1,9 @@
 .footer {
-  background-color: var(--main-bg-color);
-  height: 3rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.link {
-  margin-left: 2rem;
-}
-
-.link:hover svg,
-.link:active svg {
-  fill: var(--secondary-text-color);
-}
-
-.link svg {
-  fill: var(--secondary-text-color);
+  background-color: #000;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  color: #FFF;
+  padding: 1rem 0;
 }

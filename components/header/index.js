@@ -1,21 +1,43 @@
 import Link from 'next/link'
-import { HiMenuAlt3 } from "react-icons/hi";
+import Image from 'next/image'
+import { HiMenu } from 'react-icons/hi'
+
+import { NAV_DATA } from '../../data/nav'
 
 import styles from './header.module.css'
 
-function Header() {
+function Header({ onClick }) {
   return (
-    <header className={styles.header}>
-      <div className={styles.wrap}>
-        <Link href="/">
-          <a className={styles.logoLink}>
-            <h1 className={styles.logoText}>fechatAg</h1>
-          </a>
-        </Link>
-        <nav className={styles.nav}>
-          <HiMenuAlt3 />
-        </nav>
-      </div>
+    <header className="container">
+      <nav className={styles.nav}>
+        <h1>
+          <Link href="/">
+            <a>
+              <Image
+                className={styles.image}
+                src="/logo_fechatag.png"
+                alt="FECHATAG Podcast"
+                width={100}
+                height={100}
+              />
+            </a>
+          </Link>
+        </h1>
+        <div className={styles.group}>
+          {NAV_DATA.map(item => (
+            <Link href={item.href} key={item.id}>
+              <a className={styles.link}>
+                {item.title}
+              </a>
+            </Link>
+          ))}
+        </div>
+        <div className={styles.mobileIcon}>
+          <button className={styles.button} onClick={onClick} aria-label="Abrir menu principal">
+            <HiMenu />
+          </button>
+        </div>
+      </nav>
     </header>
   );
 }

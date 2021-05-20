@@ -1,0 +1,10 @@
+.time {
+  background-color: #000;
+  color: #FFF;
+  padding: .3rem 1rem;
+  font-weight: bold;
+}
+
+.title {
+  margin: 1rem 0;
+}
