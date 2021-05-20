@@ -49,3 +49,27 @@ a {
 .footer-space {
   padding: 1.5rem 0;
 }
+
+/* Player  */
+body .rhap_container {
+  background-color: #79236c;
+  box-shadow: 0 0 3px 0 #79236c;
+}
+
+body .rhap_progress-bar-show-download,
+body .rhap_volume-filled,
+body .rhap_volume-indicator,
+body .rhap_progress-indicator {
+  background-color: #FFF;
+}
+
+body .rhap_progress-filled {
+  background-color: #380c4c;
+  border-radius: 0;
+}
+
+body .rhap_time,
+body .rhap_main-controls-button,
+body .rhap_volume-button {
+  color: #FFF;
+}
