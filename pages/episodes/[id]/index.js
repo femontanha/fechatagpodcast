@@ -10,7 +10,6 @@ import styles from './pageEpisode.module.css';
 const parser = new Parser()
 
 const PageEpisode = ({ title, content, pubDate, enclosure }) => {
-  console.log(enclosure.url);
   return (
     <>
       <section className="container">
